@@ -1,0 +1,13 @@
+#! /bin/sh
+
+chosen=$(printf "Jasmin\nAssam\nOolong" | rofi -window-title "  Tea Timer :: " -dmenu -i -theme ~/.config/rofi/config.rasi)
+
+time=1
+case "$chosen" in
+	"Jasmin") time=105;;
+	"Assam") time=150 ;;
+	"Oolong") time=120 ;;
+	*) exit 1 ;;
+esac
+
+exec kitty --class "tea" --detach sh -c "termdown -t DONE -T '${chosen}' ${time} -b"

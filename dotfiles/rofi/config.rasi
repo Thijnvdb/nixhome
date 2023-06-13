@@ -1,0 +1,77 @@
+
+/*
+ * ROFI color theme
+ *
+ * Based on Something Found in the Internet
+ *
+ * User: Contributors
+ * Copyright: *!
+ */
+
+configuration {
+  display-run: ":: ";
+  display-drun: ":: ";
+  display-window: ":: ";
+  drun-display-format: "{name}";
+  font: "JetBrainsMono Nerd Font Mono 12";
+  modi: "window,run,drun,ssh";
+  show-icons: false;
+}
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+  background-color: @bg;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element {
+  padding: 12;
+  text-color: @color8;
+}
+
+element selected {
+  text-color: @fg;
+}
+
+element-icon {
+  padding: 2 5;
+  size: 18px;
+}
+
+element-text {
+  padding: 2;
+  background-color: inherit;
+  text-color: inherit;
+}
+
+entry {
+  padding: 12 0 12 3;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+listview {
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+prompt {
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+}

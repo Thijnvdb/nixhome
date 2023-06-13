@@ -66,6 +66,7 @@
     ".local/bin/retheme".source = bin/retheme;
     ".local/bin/rd_work_laptop".source = bin/rd_work_laptop;
     ".local/bin/post_pywal_change.sh".source = bin/post_pywal_change.sh;
+    ".config/rofi".source = dotfiles/rofi;
     # ".oh-my-zsh".source = dotfiles/omzsh;
 
     # # You can also set the file content immediately.
