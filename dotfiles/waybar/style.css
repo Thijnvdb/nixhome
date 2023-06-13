@@ -1,0 +1,269 @@
+@import "/home/thijn/.cache/wal/colors-waybar.css";
+
+* {
+    border: none;
+    border-radius: 10px;
+    font-family: "RobotoMono Nerd Font";
+    font-size: 15px;
+    min-height: 10px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#window {
+    margin-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    color: transparent;
+    background: transparent;
+}
+
+#window {
+    margin: 0 4px;
+}
+
+#workspaces {
+    margin-top: 6px;
+    margin-left: 12px;
+    font-size: 4px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    background: @color0;
+    transition: 0.1s;
+}
+
+#workspaces>button {
+    color: @color7;
+    transition: none;
+    background: transparent;
+    margin: 5px;
+    font-size: 16px;
+    padding: 1px 10px;
+}
+
+#workspaces>button.active {
+    background-color: @color7;
+    color: @color0;
+    border-radius: 5px;
+}
+
+#workspaces>button.occupied {
+    transition: none;
+    color: @color1;
+    background: transparent;
+    font-size: 4px;
+}
+
+/* #workspaces button.focused {
+    color: #ABE9B3;
+    border-top: 2px solid #ABE9B3;
+    border-bottom: 2px solid #ABE9B3;
+}
+
+#workspaces button.focused:hover {
+    color: #E8A2AF;
+} */
+
+#workspaces>button:hover {
+    transition: none;
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#network {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: @color0;
+    background: @color0;
+}
+
+#pulseaudio {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: @color7;
+    background: @color0;
+}
+
+/* #battery {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: @color0;
+    background: #B5E8E0;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @color0;
+    background-color: #B5E8E0;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #B5E8E0;
+    color: @color0;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #BF616A;
+        color: #B5E8E0;
+    }
+} */
+
+/* #backlight {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: @color0;
+    background: @color3;
+} */
+
+#custom-media {
+    background: @color0;
+    color: @color7;
+    margin-top: 6px;
+    margin-left: 8px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    transition: none;
+}
+
+#clock {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background: @color7;
+    color: @color0;
+}
+
+#clock>* {
+    color: @color0;
+}
+
+#memory {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    background: @color7;
+    color: @color0;
+}
+
+#memory>* {
+    color: @color0;
+}
+
+#cpu {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    color: @color0;
+    background: @color7;
+}
+
+#cpu>* {
+    color: @color0;
+
+}
+
+#tray {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: none;
+    background: @color0;
+}
+
+#custom-launcher {
+    font-size: 24px;
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 10px;
+    transition: none;
+    color: @color7;
+    background: @color0;
+}
+
+#custom-power {
+    font-size: 18px;
+    margin-top: 6px;
+    margin-left: 8px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: @color7;
+    background: @color0;
+    padding: 0 12px;
+}
+
+#custom-updates {
+    margin-top: 6px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: @color7;
+    background: @color0;
+}

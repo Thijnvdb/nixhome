@@ -1,0 +1,2 @@
+#!/bin/sh
+wal --theme $1 -o $HOME/.bin/pywal/post_pywal_change.sh

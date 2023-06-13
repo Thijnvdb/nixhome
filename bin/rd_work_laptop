@@ -1,0 +1,2 @@
+#!/bin/sh
+xfreerdp /v:192.168.178.60 /d:SGRNET /u:tvdbergh /size:100%
