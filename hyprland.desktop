@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Hyprland
+Exec=/home/thijn/.local/bin/wrappedhl
+Type=Application
