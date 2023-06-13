@@ -1,9 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 
-export PATH=$HOME/.bin:$HOME/.config/emacs/bin:$PATH
+. "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
